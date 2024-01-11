@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-template <typename T> class ListaEnlazada {
+template <typename T> class Doubly_Linkend_List {
 
     struct Node {
         T data;
@@ -16,7 +16,7 @@ template <typename T> class ListaEnlazada {
     int size_;
 
 public:
-    ListaEnlazada() {
+    Doubly_Linkend_List() {
         head = nullptr;
         size_ = 0;
     }
@@ -194,7 +194,7 @@ public:
 };
 
 int main() {
-    ListaEnlazada<int> lista;
+    Doubly_Linkend_List<int> lista;
     // PUSH_BACK //
     cout << "Tamaño actual : " << lista.size() << endl;
 
